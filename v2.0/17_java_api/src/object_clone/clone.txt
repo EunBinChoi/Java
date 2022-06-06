@@ -1,0 +1,15 @@
+pCopy <- p
+
+얕은 복제 (thin clone)
+pCopy.name = p.name (String)
+pCopy.age = p.age (int)
+pCopy.gender = p.gender (String)
+pCopy.scores = p.scores (int[], scores 주소값)
+* 원본의 주소값을 공유
+* 원본을 직접 참조해서 원본 수정이 가능함
+
+깊은 복제 (deep clone)
+pCopy.scores = new int[p.scores.length];
+for(int i = 0; i< pCopy.scores.length; i++){
+	pCopy.scores[i] = p.scores[i];
+}

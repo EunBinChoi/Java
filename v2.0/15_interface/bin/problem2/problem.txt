@@ -1,0 +1,18 @@
+14_abstract_class의 overview 예제에서
+다음과 같은 기능을 정의하는 인터페이스를 구현해보자.
+
+interface: GraphicControl
+1) draw(): 그림을 그리는 함수 
+(Shape class draw() --> interface draw())
+3) calcArea(): 면적을 구하는 함수
+-> Rect, Tri, Circle
+-> abstract class Shape implements GraphicControl (abstract method를 가질 수 있음)
+
+interface: OriginalPointControl
+2) moveOriginal(int dx, int dy)
+: 원점을 이동하는 함수 -> Point
+x += dx
+y += dy
+
+RemoteController -> RemoteControl
+// new 인터페이스, new 추상 클래스 (X) 

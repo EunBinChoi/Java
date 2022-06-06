@@ -1,0 +1,28 @@
+[객체지향프로그래밍의 3대특징]
+
+1. 캡슐화 (정보은닉, 필드 private/protected, 함수 public)
+
+2. 상속 (부모-자식)
+why? 코드 중복
+
+3. 다형성 (데이터 형을 다양하게 하는 성질) 
+int a = 3;
+Shape s = new Shape();
+
+[상속이 없을 경우]
+==============
+Shape
+int x, y;
+
+Rectangle
+int x, y, w, h;
+==============
+
+[상속이 있을 경우]
+==============
+Shape
+int x, y;
+
+Rectangle extends Shape
+int w, h;
+==============

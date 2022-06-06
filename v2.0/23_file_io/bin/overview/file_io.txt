@@ -1,0 +1,40 @@
+[ 파일 입출력 ] => java.io 패키지
+
+- 파일 입출력을 하는 이유?
+	1) 외부 파일을 읽어올 때 (텍스트 파일, 이미지 파일, 엑셀 파일 ...)
+	2) 자바 프로그램 상에 있는 데이터를 영구히 저장하기 위함
+	
+	ex) Customer 분류 프로젝트할 때 
+	고객 데이터를 매번 입력해야하는 이유?
+	=> 데이터 영구적이지 않았기 때문
+	=> 기존 입력 데이터는 프로그램을 다시 실행하면 사라짐 ...
+	=> 만약 이 데이터를 어떤 파일에 저장해놓으면 매번 입력할 필요 X
+
+- 입력 스트림 (InputStream)
+	: 자바 프로그램 기준으로 데이터가 들어옴
+	ex) 텍스트 파일의 회원 정보 데이터를 자바 프로그램으로 가지고 옴 
+
+- 출력 스트림 (OutputStream)
+	: 자바 프로그램 기준으로 데이터를 보냄
+	ex) 회원 정보 중에서 30세 이상 회원 추출해서 텍스트 파일 저장
+
+	* 하나의 스트림으로 입출력을 모두 할 수 없음
+	* 입출력 스트림이 따로 필요함
+	* 스트림도 단방향 (하나의 방향)	
+	
+- 스트림 클래스
+	1) 바이트 기반: 문자/그림/동영상 모든 종류의 데이터 입출력 가능
+		ex) InputStream, OutputStream
+		
+		Input(/Output)Stream > FileInput(/Output)Stream
+						     > DataInput(/Output)Stream
+					         > BufferedInput(/Output)Stream
+	
+	2) 문자 기반: 문자 입출력 가능
+		ex) Reader, Writer
+		
+		Reader(/Writer) > FileReader(/Writer)
+						> BufferedReader(/Writer)
+						> InputStreamReader(/Writer)
+
+

@@ -1,0 +1,72 @@
+[ 자바 API (Application Programming Interface) ]
+- 라이브러리 (library)라고도 함
+- 프로그램 개발에 필요한 클래스/인터페이스 모음
+cf) 프레임워크 (framework) ex) 스프링 (Spring)
+
+java.lang 패키지 <-- 기본적으로 import가 되어있는 라이브러리
+- System 클래스
+- Object 클래스
+- String 클래스 (내부 문자 조작 X)
+- StringBuffer, StringBuilder 클래스 (내부 문자 조작 O)
+- Math 클래스
+- Wrapper 클래스 (Integer, Double, Float, Boolean, Character)
+
+java.util 패키지
+- StringTokenizer 클래스
+- Scanner 클래스
+- Arrays 클래스
+- Random 클래스
+- Date 클래스
+- Calendar 클래스
+
+java.util.regex 패키지
+- 정규 표현식 (Regular Expression, regex)
+: 문자열이 정해진 형식이 있는 경우 형식을 확인하기 위한 식
+: 사용자가 이메일, 전화번호를 제대로 입력했는지 검증하기 위해 사용
+
+ex) 010-1234-5678 / 02-000-0000
+=> 2자리이상숫자-3자리이상숫자-4자리숫자
+ex) abc@naver.com / abc@naver.co.kr
+=> 문자/숫자@문자/숫자.2자리이상문자(.2자리이상문자)
+
+
+	[]: 한 개의 문자
+	[abc]: a, b, c 중 하나의 문자
+	[^abc]: a, b, c 이외의 하나의 문자
+	[a-zA-Z]: a~z, A~Z 중 하나의 문자
+
+	\w: 한 개의 알파벳 또는 한 개의 숫자 => [a-zA-ZO-9]
+	\d: 한 개의 숫자 => [0-9]
+	\s: 공백 (space)
+	?: 없거나 한 개
+	*: 없거나 한 개 이상
+	+: 한 개 이상
+	
+	{n}: 정확하게 n개
+	{n,}: n개 이상
+	{n, m}: n개 이상 ~ m개 이하
+	(): 그룹핑
+	
+	ex) 010-1234-5678
+		02-000-0000
+	=> 2자리이상숫자-3자리이상숫자-4자리숫자
+	
+	\d{2,3}[-]\d{3,4}[-]\d{4}
+	
+
+	ex) abc@naver.com
+		abc@naver.co.kr
+		
+	\w+[@]\w+[.]\w+([.]\w+)?
+	
+	
+java.text 패키지
+- Format 클래스: 데이터의 형식을 지정하는 클래스
+- 숫자 형식: DecimalFormat
+- 날짜 형식: SimpleDateFormat
+
+
+
+
+	
+
