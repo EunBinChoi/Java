@@ -5,5 +5,5 @@
 # 사용방법
 - git clone https://github.com/EunBinChoi/Lecture-Note-Java-master.git
 
-[1] http://www.yes24.com/Product/Goods/24259565
+[1] http://www.yes24.com/Product/Goods/24259565  
 [2] http://www.yes24.com/Product/Goods/15651484
